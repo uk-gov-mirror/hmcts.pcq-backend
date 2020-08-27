@@ -309,11 +309,11 @@ dependencies {
   testCompile group: 'io.rest-assured', name: 'xml-path', version: '4.3.0'
   testCompile group: 'io.rest-assured', name: 'json-path', version: '4.3.0'
 
-  testCompile group: 'org.testcontainers', name: 'testcontainers', version: '1.13.0'
-  testCompile group: 'org.testcontainers', name: 'postgresql', version: '1.13.0'
+  testCompile group: 'org.testcontainers', name: 'testcontainers', version: '1.14.3'
+  testCompile group: 'org.testcontainers', name: 'postgresql', version: '1.14.3'
 
-  integrationTestCompile group: 'org.testcontainers', name: 'testcontainers', version: '1.13.0'
-  integrationTestCompile group: 'org.testcontainers', name: 'postgresql', version: '1.13.0'
+  integrationTestCompile group: 'org.testcontainers', name: 'testcontainers', version: '1.14.3'
+  integrationTestCompile group: 'org.testcontainers', name: 'postgresql', version: '1.14.3'
 
   integrationTestCompile sourceSets.main.runtimeClasspath
   integrationTestCompile sourceSets.test.runtimeClasspath

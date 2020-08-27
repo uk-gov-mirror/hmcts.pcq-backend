@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestClientResponseException;
@@ -187,12 +188,10 @@ public class PcqBackEndClient {
         return response;
     }
 
-
-
     private HttpHeaders getS2sTokenHeaders() {
 
         HttpHeaders headers = new HttpHeaders();
-        //headers.setContentType(APPLICATION_JSON);
+        headers.setContentType(MediaType.APPLICATION_JSON);
         headers.add("X-Correlation-Id", "INTEG-TEST-PCQ");
         headers.add("Authorization", "Bearer " + generateTestToken());
         return headers;
