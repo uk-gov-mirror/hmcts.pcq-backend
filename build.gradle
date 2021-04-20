@@ -236,7 +236,7 @@ dependencyManagement {
       entry 'netty-resolver-dns'
       entry 'netty-resolver-dns-native-macos'
     }
-    dependency group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.67'
+    dependency group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.68'
     // CVE-2018-10237 - Unbounded memory allocation
     // CVE-2020-8908 - Temp directory creation vulnerability
     dependencySet(group: 'com.google.guava', version: '30.1-jre') {
