@@ -21,7 +21,7 @@ services:
 
   pcq-database:
     container_name: pcq-database
-    image: postgres:17-alpine
+    image: postgres:18-alpine
     environment:
       POSTGRES_USER: ${PCQ_DB_USERNAME}
       POSTGRES_PASSWORD: ${PCQ_DB_PASSWORD}
