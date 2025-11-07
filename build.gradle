@@ -222,7 +222,7 @@ dependencyCheck {
 dependencyManagement {
   dependencies {
     // CVE-2021-21290
-    dependency group: 'com.azure', name: 'azure-core-http-netty', version: '1.16.1'
+    dependency group: 'com.azure', name: 'azure-core-http-netty', version: '1.16.2'
     dependencySet(group: 'io.netty', version: '4.2.7.Final') {
       entry 'netty-buffer'
       entry 'netty-codec'
@@ -285,7 +285,7 @@ def versions = [
 ]
 
 dependencies {
-  implementation group: 'com.azure', name: 'azure-storage-blob', version: '12.31.2'
+  implementation group: 'com.azure', name: 'azure-storage-blob', version: '12.32.0'
   implementation group: 'com.github.hmcts.java-logging', name: 'logging', version: '6.1.9'
   implementation group: 'com.github.hmcts', name: 'pcq-commons', version: '1.3.1'
   implementation group: 'com.github.hmcts', name: 'service-auth-provider-java-client', version: '5.3.3'
